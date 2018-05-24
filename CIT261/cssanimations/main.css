@@ -68,7 +68,7 @@ body{
 
 .background {
     background-color: skyblue;
-    animation: color 3s linear infinite;
+    animation: color 3s linear;
     height: 400px;
     width: 500px;
 }
@@ -76,12 +76,12 @@ body{
 .cow {
     top: 700px;
     width: 470px;    
-    animation: drawArc2 3s linear infinite;
+    animation: drawArc2 3s linear;
 }
 
 .cow img {
     max-height: 60px;
-    animation: drawArc1 3s linear infinite;
+    animation: drawArc1 3s linear;
 }
 
 .cow {

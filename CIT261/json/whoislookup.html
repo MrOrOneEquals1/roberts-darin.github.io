@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="main.css">
         <title>Whois Demo</title>
-        <meta name="description" content="This will display my CSS Animations">
+        <meta name="description" content="This is my WhoIs Demo">
 
     </head>
     <body>
@@ -35,7 +35,7 @@
         for (i=0; i < iparray.length; i++) {
 			(function(i){
             nRequest[i] = new XMLHttpRequest();
-            nRequest[i].open('GET', "http://whois.arin.net/rest/ip/"+iparray[i], true);
+            nRequest[i].open('GET', "https://whois.arin.net/rest/ip/"+iparray[i], true);
             nRequest[i].setRequestHeader('Accept', 'application/json');
  
 
