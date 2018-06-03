@@ -50,10 +50,10 @@ public class collection {
       
       
    	
-      System.out.println();
+
 
    
-	  System.out.println("-------------------LinkedList----------------------");
+	  System.out.println("/n-------------------LinkedList----------------------");
 	  System.out.println("Great NBA Players");
 	  //LinkedList Example
 	  LinkedList<String> players = new LinkedList<String>();
