@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/css1.css">
+        <meta name="description" content="CSS Manipulations">
+        <script type="text/javascript" src="scripts/css.js"></script>
+    </head>
+    <body>
+        <h2>Manipulating CSS Class Properties Using JavaScript</h2>
+        <img id="myPic" src="robertsFamily.jpg">
+        <div id="slideContainer"><br>
+            <input type="range" value="100" min="1" max="100" id="picWidth" oninput="adjustPercentage(this.value)" onchange="adjustPercentage(this.value)">
+            <span id="sliderOutput"></span>
+            <button class="myButtons" type="button" onclick="changePictureWidth()">Change Picture Size</button>
+        </div>
+        <div id="fontChange"><p>This text can change colors and size.  Try me!</p></div>
+        <button class="myButtons" type="button" onclick="changeFontSize()">Change Font Size</button>
+        <p>Select a value to change the font color.</p>
+        <select id="fontColor">
+            <option value="default" selected disabled hidden>Select Color ...</option>
+            <option value="red">Red</option>
+            <option value="orange">Orange</option>
+            <option value="yellow">Yellow</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="violet">Violet</option>
+        </select>
+        <button class="myButtons" type="button" onclick="changeFontColor()">Submit</button>
+        
+        <select onchange="myFunction(this);" size="2">
+            <option>normal</option>
+            <option>italic</option>
+        </select>
+        
+        <select id="fontStyle">
+            <option value="default" selected disabled hidden>Select Style ...</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Arial">Arial</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Lucida Console">Lucida Console</option>
+        </select>
+        <button class="myButtons" type="button" onclick="changeFontStyle()">Submit</button>
+        
+        <p>Change the color of the buttons: 
+            <button class="myButtons" type="button" onclick="changeButtons()">Change Background</button>
+        </p>
+        <p>
+            <button class="myButtons" type="button" onclick="clearItems()">Reset</button>&nbsp;
+        </p>
+    </body>
+</html>
+

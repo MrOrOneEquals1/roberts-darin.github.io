@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <meta name="description" content="This will display my Local Storage">
+        <script type="text/javascript" src="scripts/localStorage.js"></script>
+    </head>
+    <body>
+        <h2>Local StSSorage API, Storing and Retrieving Simple Data, Arrays, Associative Arrays, and Objects</h2>
+        <p>ScoreBoard</p>
+        <div><button type="button" onClick="clickCounter1()">Team 1</button>&nbsp;</div>
+        <div><button type="button" onClick="clickCounter2()">Team 2</button>&nbsp;</div>
+        <div><button type="button" onClick="clearItems()">Reset</button>&nbsp;
+        <button type="button" onclick="window.location.href='index.html'">Home</button>
+        <p>&nbsp;</p></div>
+        <div id="result1"></div>
+        <div id="result2"></div>
+        <hr \>
+        
+        
+        <p>Enter in your classes to see it stored locally on the page. Refresh after entering to see how your information is stored.</p>
+        <form id="form" action="#" method="post">
+            <fieldset>
+                <legend>Classes</legend>
+                <div><label><span>First Class:</span><input id="class1" type="text"></label></div>
+                <div><label><span>Second Class:</span><input id="class2" type="text"></label></div>
+                <div><label><span>Third Class:</span><input id="class3" type="text"></label></div>
+                <div><label><span>Fourth Class:</span><input id="class4" type="text"></label></div>
+            </fieldset>
+        </form>
+        <button type="button" onClick="populatePerson()">Submit</button>&nbsp;<button type="button" onClick="setUser()">Show</button>&nbsp;<button type="button" onClick="clearItems()">Reset</button>
+        <p>&nbsp;</p>
+        <div id="userOutput"></div>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>Robbie Dodenbier - CIT 261</title>
+        <meta name="description" content="Assignment Portal page for Robbie Dodenbier in CIT 261 - Mobile Web Frontend Development at Brigham Young University - Idaho.">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/css1.css">
+        <script type="text/javascript" src="scripts/css.js"></script>
+    </head>
+    <body>
+        <h2>Manipulating CSS Class Properties Using JavaScript</h2>
+        <img id="myPic" src="robertsFamily.jpg">
+        <div id="slideContainer"><br>
+            <input type="range" value="100" min="1" max="100" id="picWidth" oninput="adjustPercentage(this.value)" onchange="adjustPercentage(this.value)">
+            <span id="sliderOutput"></span>
+            <button class="myButtons" type="button" onclick="changePictureWidth()">Change Picture Size</button>
+        </div>
+        <div id="fontChange"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vehicula justo pretium tempus tincidunt. Aenean malesuada purus at orci interdum imperdiet. Integer enim libero, malesuada et mattis vitae, sodales et ligula. Maecenas pretium dapibus nunc, eget aliquet augue mattis sit amet. Morbi ullamcorper ante vitae erat laoreet, non laoreet quam rhoncus. Aenean ac nulla ligula. Aenean blandit, augue at suscipit luctus, ligula nibh sodales quam, sed vehicula urna lectus vel mi. Pellentesque pretium porta mi sit amet sodales.</p></div>
+        <button class="myButtons" type="button" onclick="changeFontSize()">Change Font Size</button>
+        <p>Select a value to change the font color.</p>
+        <select id="fontColor">
+            <option value="default" selected disabled hidden>Select Color ...</option>
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="teal">Teal</option>
+            <option value="coral">Coral</option>
+            <option value="green">Green</option>
+        </select>
+        <button class="myButtons" type="button" onclick="changeFontColor()">Submit</button>
+        <p>To add a border radius to all buttons, click on this button: 
+            <button class="myButtons" type="button" onclick="changeButtons()">Change Buttons</button>
+        </p>
+        <p>
+            <button class="myButtons" type="button" onclick="clearItems()">Reset</button>&nbsp;<button class="myButtons" type="button" onclick="window.location.href='index.html'">Home</button>
+        </p>
+    </body>
+</html>

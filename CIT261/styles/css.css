@@ -1,0 +1,31 @@
+#myPic {
+    max-width: 75%;
+    color: 
+}
+
+.myButtons {
+    padding: 8px 14px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    background-color: coral;
+}
+
+.myButtons_coral{
+    background-color: darkgray;
+}
+
+
+
+#slideContainer {
+    width: 100%;
+}
+
+#picWidth {
+    width: 25%;
+}
+
+#fontChange {
+    font-size: 10px;
+}
+

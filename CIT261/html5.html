@@ -1,0 +1,43 @@
+
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <meta name="description" content="HTML5 Tags">
+        <script type="text/javascript" src="scripts/canvas.js"></script>
+    </head>
+    <body>
+        <h1>HTML5 Tags - Video, Audio, and Canvas</h1>
+        
+        <h3>Canvas<hr></h3>
+        <canvas id="canvas" width="400" height="200"></canvas>
+        <div class="canvasPlayArea">
+            <p>Edit or add your own canvas commands below:</p>
+            <textarea id="code" rows="8" cols="60">        
+var grd = ctx.createRadialGradient(200, 100, 5, 180, 120, 200);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 400, 200);
+            </textarea>
+        </div>
+        <button type="button" onclick="drawCanvas()">Fill Canvas</button>&nbsp;
+        <button type="button" onclick="clearFields()">Reset</button>        
+        
+        <h3>Audio<hr></h3>
+        <p>Enya - Storms in Africa</p>
+        <audio controls>
+          <source src="stormsInAfrica.m4a" type="audio/mpeg">
+            Please upgrade your video to hear the audio.
+        </audio>
+
+        <h3>Video<hr></h3>
+        <video width="400" height="600" controls>
+          <source src="ropeJump.mp4" type="video/mp4">
+            Please upgrade your browser to view the video..
+        </video>
+    </body>
+</html>
