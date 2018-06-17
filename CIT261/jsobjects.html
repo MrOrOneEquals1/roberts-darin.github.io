@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <meta name="description" content="JS Objects">
+        <script type="text/javascript">
+            
+            // Creating an object literal
+            var family = {
+                father: "Darin",
+                mother: "Carrie",
+                daughter1: "Kayla",
+                daughter2: "Dana",
+                daughter3: "Kelsey",
+                daughter4: "DD",
+                daughter5: "Callie",
+                son: "Cameron",
+                lastName: "Roberts",
+                fatherName: function() {
+                return this.father + " " + this.lastName;
+                },
+                fullFamily: function() {
+                return this.father + ", " + this.mother + ", " + 
+                    this.daughter1 + ", " + this.daughter2 + ", " + 
+                    this.son + ", " + this.daughter3 + ", " + this.daughter4 + ", " +this.daughter5;
+                }
+            };
+            
+            // Access object properties
+            console.log("Father's Name: " + family.father);
+            console.log("Mother's Name: " + family.mother);
+            console.log("First Daughter: " + family.daughter1);
+            //Access Object Method Properties
+            console.log("Father's Full Name: " + family.fatherName());
+            console.log("Full Family: " + family.fullFamily());
+            
+             // Create object using constructor
+            function Dogs (dog, breed, age) {
+                this.dog = dog;
+                this.breed = breed;
+                this.fullDog = dog + ", " + breed + ", " + age;
+            }
+            
+            var firstDog = new Dogs("Daisy", "Westy", "2 years");
+            var secondDog = new Dogs("Misty", "Westy", "2 years");
+            var thirdDog = new Dogs("Poppy", "Westy", "1 year");
+            
+            //Access new Objects
+            console.log("First Dog Info: " + firstDog.fullDog);
+            console.log("Second Dog Info: " + secondDog.fullDog);
+            console.log("Third Dog Info: " + thirdDog.fullDog);
+            
+            //Add additional properities to object
+            
+            firstDog.weight = 18.5;
+            secondDog.weight = 16;
+            thirdDog.weight = 17;
+
+            
+            console.log("First dog weight: " + firstDog.weight);
+            console.log("Second dog weight: " + secondDog.weight);
+            console.log("Third dog weight: " + thirdDog.weight);
+            
+        </script>
+    </head>
+    <body>
+        <h2>Object Creation Functions, Inheritance, Properties, Methods, Instantiation</h2>
+        <p>All of the work happens "behind the scenes".    The source code can be viewed to see the javascript.    The console can be viewed to see the output.</p>
+
+    </body>
+</html>
