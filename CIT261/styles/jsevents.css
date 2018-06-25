@@ -1,0 +1,76 @@
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+label span {
+    display: block;
+    margin: 0px;
+    box-sizing: none;
+    line-height: 1.2;
+    text-align: left;
+}
+
+div {
+    width: 100%;
+    margin: 2%;
+    height: 0px;
+    font-size: 18px;
+}
+
+canvas {
+    width: 150px;
+}
+    
+form {
+    
+}
+
+.container {
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+#message {
+    display: none;
+    background: #f1f1f1;
+    color: #000;
+
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+#passwordCanvas {
+    display: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+h3 {
+    padding: none;
+    margin: none;
+    height: 20px;
+}
+
+li {
+    height: 18px;
+}
+
+#message li {
+    padding: 0px;
+    margin: 0px;
+}
